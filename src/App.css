@@ -1,0 +1,131 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+.App {
+  margin: 0 auto;
+  width: 600px;
+  min-height: 400px;
+  background-color: rgba(244, 244, 244);
+}
+
+.logo {
+  text-align: center;
+}
+
+h1{
+  font-weight: 100;
+  font-size: 100px;
+  color: rgba(225, 159, 155, 0.5);
+}
+
+.list{
+  margin: 0 auto;
+  width: 550px;
+}
+.input_task{
+  display: flex;
+  margin:0 auto;
+  width: 550px;
+  margin-bottom: 5px;
+}
+
+input{
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+  font-style: italic;
+  margin-right: 5px;
+}
+input ::placeholder{
+  font-style: italic;
+  color: rgb(196, 189, 189);
+}
+
+.task{
+  display: flex;
+  width: 550px;
+  font-size: 25px;
+  background-color: white;
+  height: 50px;
+  border:1px solid rgb(161, 156, 156);
+  border-top: 1px solid rgba(235,235,235);
+}
+.text{
+  color: rgb(46, 42, 42);
+  font-weight: 200;
+}
+
+.label{
+}
+.checkbox{
+  display: none;
+}
+
+.fake{
+  margin-left: 10px;
+  margin-top: 7px;
+  display:inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid grey ;
+  position: relative;
+  border-radius: 50%;
+}
+
+.fake::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top:5px;
+  width: 4px;
+  height: 15px;
+  border: solid rgb(138,201,186);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: .2s;
+}
+
+.checkbox:checked + .fake::before{
+  opacity: 1;
+}
+
+.text{
+  margin-top: -5px;
+  margin-left: 10px ;
+  font-size: 30px;
+}
+
+.menu{
+  padding-top: 10px;
+  justify-content: space-between;
+  margin:0 auto;
+  display: flex;
+  width: 550px;
+}
+.menu button{
+  color: rgb(159, 151, 151);
+  min-width:20px;
+  cursor: pointer;
+}
+
+.sum{
+  color: rgb(159, 151, 151);
+}
+
+.active{
+  border: 1px solid rgb(145, 137, 137);
+}
+
+span{
+  margin-left: 5px;
+  color: rgb(159, 151, 151);
+  cursor: pointer;
+}
+
+.done{
+  text-decoration:line-through;
+  color:rgb(159, 151, 151); ;
+}
